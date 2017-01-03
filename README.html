@@ -1,0 +1,1286 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  text-align: justify;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>.codehilite pre .hll { background-color: #f8eec7 }
+.codehilite pre  { background: #ffffff; color: #333333 }
+.codehilite pre .c { color: #999988; font-style: italic } /* Comment */
+.codehilite pre .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.codehilite pre .k { font-weight: bold } /* Keyword */
+.codehilite pre .n { color: #333333 } /* Name */
+.codehilite pre .o { font-weight: bold } /* Operator */
+.codehilite pre .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.codehilite pre .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.codehilite pre .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.codehilite pre .cs { color: #999988; font-style: italic } /* Comment.Special */
+.codehilite pre .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.codehilite pre .ge { font-style: italic } /* Generic.Emph */
+.codehilite pre .gr { color: #aa0000 } /* Generic.Error */
+.codehilite pre .gh { color: #999999 } /* Generic.Heading */
+.codehilite pre .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.codehilite pre .go { color: #888888 } /* Generic.Output */
+.codehilite pre .gp { color: #555555 } /* Generic.Prompt */
+.codehilite pre .gs { font-weight: bold } /* Generic.Strong */
+.codehilite pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.codehilite pre .gt { color: #aa0000 } /* Generic.Traceback */
+.codehilite pre .kc { font-weight: bold } /* Keyword.Constant */
+.codehilite pre .kd { font-weight: bold } /* Keyword.Declaration */
+.codehilite pre .kn { font-weight: bold } /* Keyword.Namespace */
+.codehilite pre .kp { font-weight: bold } /* Keyword.Pseudo */
+.codehilite pre .kr { font-weight: bold } /* Keyword.Reserved */
+.codehilite pre .kt { font-weight: bold } /* Keyword.Type */
+.codehilite pre .m { color: #945277 } /* Literal.Number */
+.codehilite pre .s { color: #df5000 } /* Literal.String */
+.codehilite pre .na { color: #008080 } /* Name.Attribute */
+.codehilite pre .nb { color: #0086b3 } /* Name.Builtin */
+.codehilite pre .nc { color: #445588; font-weight: bold } /* Name.Class */
+.codehilite pre .no { color: #094e99 } /* Name.Constant */
+.codehilite pre .nd { color: #333333 } /* Name.Decorator */
+.codehilite pre .ni { color: #800080 } /* Name.Entity */
+.codehilite pre .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.codehilite pre .nf { color: #945277; font-weight: bold } /* Name.Function */
+.codehilite pre .nl { color: #333333 } /* Name.Label */
+.codehilite pre .nn { color: #555555 } /* Name.Namespace */
+.codehilite pre .nx { color: #333333 } /* Name.Other */
+.codehilite pre .py { color: #333333 } /* Name.Property */
+.codehilite pre .nt { color: #000080 } /* Name.Tag */
+.codehilite pre .nv { color: #008080 } /* Name.Variable */
+.codehilite pre .ow { font-weight: bold } /* Operator.Word */
+.codehilite pre .w { color: #bbbbbb } /* Text.Whitespace */
+.codehilite pre .mb { color: #945277 } /* Literal.Number.Bin */
+.codehilite pre .mf { color: #945277 } /* Literal.Number.Float */
+.codehilite pre .mh { color: #945277 } /* Literal.Number.Hex */
+.codehilite pre .mi { color: #945277 } /* Literal.Number.Integer */
+.codehilite pre .mo { color: #945277 } /* Literal.Number.Oct */
+.codehilite pre .sb { color: #df5000 } /* Literal.String.Backtick */
+.codehilite pre .sc { color: #df5000 } /* Literal.String.Char */
+.codehilite pre .sd { color: #df5000 } /* Literal.String.Doc */
+.codehilite pre .s2 { color: #df5000 } /* Literal.String.Double */
+.codehilite pre .se { color: #df5000 } /* Literal.String.Escape */
+.codehilite pre .sh { color: #df5000 } /* Literal.String.Heredoc */
+.codehilite pre .si { color: #df5000 } /* Literal.String.Interpol */
+.codehilite pre .sx { color: #df5000 } /* Literal.String.Other */
+.codehilite pre .sr { color: #017936 } /* Literal.String.Regex */
+.codehilite pre .s1 { color: #df5000 } /* Literal.String.Single */
+.codehilite pre .ss { color: #8b467f } /* Literal.String.Symbol */
+.codehilite pre .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.codehilite pre .vc { color: #008080 } /* Name.Variable.Class */
+.codehilite pre .vg { color: #008080 } /* Name.Variable.Global */
+.codehilite pre .vi { color: #008080 } /* Name.Variable.Instance */
+.codehilite pre .il { color: #945277 } /* Literal.Number.Integer.Long */</style><title>README</title></head><body><article class="markdown-body"><h1 id="rapport"><a name="user-content-rapport" href="#rapport" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Rapport</h1>
+<!-- Add custom css to markdown -->
+
+<style> .pagebreak { page-break-after: always; } </style>
+
+<p>Maxime LECHEVALLIER</p>
+<p>Jules HABLOT</p>
+<p>Rémi GATTAZ</p>
+<h2 id="table-des-matieres"><a name="user-content-table-des-matieres" href="#table-des-matieres" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table des Matières</h2>
+<!-- MarkdownTOC -->
+
+<ul>
+<li>Configuration notre machine de test<ul>
+<li>Processeur :</li>
+<li>Système :</li>
+<li>Compilateur :</li>
+<li>Taille des primitifs :</li>
+</ul>
+</li>
+<li>La bibliothèque Vecteur<ul>
+<li>Les constantes :</li>
+<li>Les types :</li>
+<li>Les Fonctions</li>
+</ul>
+</li>
+<li>La bibliothèque Matrice<ul>
+<li>Les constantes :</li>
+<li>Les types :</li>
+<li>Les Fonctions</li>
+</ul>
+</li>
+<li>Choix d'implémentation</li>
+<li>Tests effectués<ul>
+<li>Tests de fonctionalités</li>
+<li>Tests de performances</li>
+<li>Interprétation des résultats</li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<div class="pagebreak"></div>
+
+<h2 id="configuration-notre-machine-de-test"><a name="user-content-configuration-notre-machine-de-test" href="#configuration-notre-machine-de-test" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Configuration notre machine de test</h2>
+<h3 id="processeur"><a name="user-content-processeur" href="#processeur" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Processeur :</h3>
+<ul>
+<li>Fréquence d'Horloge : 3.40GHz</li>
+<li>Cache L3 : 6 Mo</li>
+<li>Mémoire centrale : 8 Go 1600 MHz DDR3</li>
+<li>Support SSE: sse4_2 et inférieur</li>
+</ul>
+<h3 id="systeme"><a name="user-content-systeme" href="#systeme" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Système :</h3>
+<p>CENTOS 7</p>
+<h3 id="compilateur"><a name="user-content-compilateur" href="#compilateur" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Compilateur :</h3>
+<p>gcc (GCC) 4.8.3 20140911 (Red Hat 4.8.3-9)</p>
+<h3 id="taille-des-primitifs"><a name="user-content-taille-des-primitifs" href="#taille-des-primitifs" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Taille des primitifs :</h3>
+<ul>
+<li>int       : 4 octets</li>
+<li>float     : 4 octets</li>
+<li>double    : 8 octets</li>
+<li>char      : 1 octet</li>
+</ul>
+<div class="pagebreak"></div>
+
+<h2 id="la-bibliotheque-vecteur"><a name="user-content-la-bibliotheque-vecteur" href="#la-bibliotheque-vecteur" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>La bibliothèque Vecteur</h2>
+<h3 id="les-constantes"><a name="user-content-les-constantes" href="#les-constantes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les constantes :</h3>
+<ul>
+<li>SMALLN : entier définissant le nombre d'éléments d'un petit vecteur</li>
+<li>BIGN : entier définissant le nombre d'éléments d'un grand vecteur</li>
+</ul>
+<p>Le choix des valeurs pour SMALLN et BIGN est expliqué dans le point "Tailles des Vecteurs et Matrices" dans "Choix d'implémentation".</p>
+<h3 id="les-types"><a name="user-content-les-types" href="#les-types" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les types :</h3>
+<ul>
+<li>t_sdVect : petit vecteur de doubles</li>
+<li>t_sfVect : petit vecteur de floats</li>
+<li>t_bdVect : grand vecteur de doubles</li>
+<li>t_bfVect : grand vecteur de floats</li>
+</ul>
+<h3 id="les-fonctions"><a name="user-content-les-fonctions" href="#les-fonctions" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les Fonctions</h3>
+<p>Pour chacun des types définis, les fonctions suivantes ont été implémentés :<br />
+- add : fonction d'addition de deux vecteurs<br />
+- mScalaire : multiplication d'un vecteur par un scalaire<br />
+- pScalaire : produit scalaire de deux vecteurs.<br />
+- read : lecture d'un vecteur depuis stdin<br />
+- write : écriture d'un vecteur dans stdout</p>
+<p>Puisqu'il a fallu définir ces fonctions pour chacun des types de la librairies mais que la notion de surcharge n'existe pas en C, ces fonctions ont du être nommé différemment pour chaque type. Leurs nommage a été fait de la façon suivantes : <code>nomFonction_type</code>.</p>
+<p>On trouve par exemple la fonction <code>add_bdVect</code> comme étant la fonction d'addition de deux grands vecteurs de doubles.</p>
+<div class="pagebreak"></div>
+
+<h2 id="la-bibliotheque-matrice"><a name="user-content-la-bibliotheque-matrice" href="#la-bibliotheque-matrice" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>La bibliothèque Matrice</h2>
+<h3 id="les-constantes_1"><a name="user-content-les-constantes_1" href="#les-constantes_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les constantes :</h3>
+<ul>
+<li>SMALLN_MATR : entier définissant la taille des petites matrices carrées</li>
+<li>BIGN_MATR : entier définissant la taille des grandes matrices carrées</li>
+</ul>
+<h3 id="les-types_1"><a name="user-content-les-types_1" href="#les-types_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les types :</h3>
+<ul>
+<li>t_sdMatr : petite matrice de double</li>
+<li>t_sfMatr : petite matrice de float</li>
+<li>t_sdMatrVect : ligne ou colone d'une petite matrice de double</li>
+<li>t_sfMatrVect : ligne ou colone d'une petite matrice de floats</li>
+<li>t_bdMatr : grande matrice de double</li>
+<li>t_bfMatr : grande matrice de floats</li>
+<li>t_bdMatrVect : ligne ou colone d'une grande matrice de double</li>
+<li>t_bfMatrVect : ligne ou colone d'une grande matrice de floats</li>
+</ul>
+<p>C'est pour les fonctions gaxpy que nous avons du définir les types t_*MatrVect. Notre bibliothèque de vecteur ne permet pas de choisir la taille des vecteurs, nous avons donc du définir des types nous permettant de manipuler des lignes ou colonnes des matrices.</p>
+<h3 id="les-fonctions_1"><a name="user-content-les-fonctions_1" href="#les-fonctions_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les Fonctions</h3>
+<p>Pour chaque type matrices, nous avons défini les fonctions suivantes :<br />
+- add : addition de deux matrices<br />
+- addVect : version vectorisé de l'addition<br />
+- factLU : factorisation LU d'une matrice<br />
+- gaxpy : gaxpy<br />
+- mScalaire : multiplication par un scalaire d'une matrice<br />
+- mult : multiplication de deux matrices<br />
+- multVect : version vectorisé de la multiplication de deux matrices<br />
+- transpo : tranposition d'une matrice<br />
+- read : lecture d'une matrice depuis stdin<br />
+- write : écriture d'une matrice dans stdout</p>
+<p>Pour chacun des types lignes ou colonne, les fonctions suivantes ont été définies :<br />
+- read :  lecture d'une ligne ou colonne depuis stdin<br />
+- write : écriture d'une ligne ou colonne dans stdout</p>
+<p>La convention de nommage des fonction a été la même que pour la librairie vecteur. Nous avons suffixé chaque fonction par le type des arguments qu'elle reçoit et retourne. Nous obtenons donc par exemple <code>add_bdMatr</code>.comme étant la fonction d'addition de deux matrice de type t_bdMatr.</p>
+<h2 id="choix-dimplementation"><a name="user-content-choix-dimplementation" href="#choix-dimplementation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Choix d'implémentation</h2>
+<h4 id="tailles-des-vecteurs-et-matrices"><a name="user-content-tailles-des-vecteurs-et-matrices" href="#tailles-des-vecteurs-et-matrices" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tailles des Vecteurs et Matrices</h4>
+<h5 id="smalln-et-bign"><a name="user-content-smalln-et-bign" href="#smalln-et-bign" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>SMALLN et BIGN</h5>
+<p>SMALLN et BIGN sont deux valeurs qui ont été choisis afin que les petits vecteurs tiennent dans le cache L3 du processeur mais que les grands vecteur ne s'y trouve pas.</p>
+<p>La fonction add utilise 3 vecteurs en même temps. Les autres fonctions n'utlisent qu'un ou deux vecteurs. De plus, un double utilise plus de place en mémoire qu'un float. Pour le choix de SMALLN, il a donc fallu choisir une valeurs telle que 3 vecteurs de SMALLN doubles puissent contenir dans L3.</p>
+<p>La cache L3 de notre machine de tests était de 6Mo. Il était donc nécessaire de choisir SMALLN tel que 3*8*SMALLN &lt; 6 000 000.</p>
+<p>Nous avons donc choisi SMALLN = 1 000</p>
+<p>La fonction utilisant le moins de vecteurs en simulatané est la fonction mScalaire qui n'en utlise qu'un seul. Et un float utilise moins d'espace en mémoire qu'un double. Pour le choix de BIGN il a donc fallu choisir une valeur telle qu'un vecteur de BIGN floats ne puisse pas être contenu dans L3.</p>
+<p>Il était donc nécessaire de choisir BIGN tel que 1*4*BIGN &gt; 6000000</p>
+<p>Nous avons donc choisi BIGN = 2 000 0000</p>
+<p>En utilisant la commande htop, et en observant la colonne RES, nous avons pu observer que les petits vecteur était effectivement stocké sur L3 puisque non présent dans la mémoire. Au contraire, on a pu observer qu'il était présent en mémoire lors de la manipulation de grands vecteurs.</p>
+<h5 id="smalln_matr-et-bign_matr"><a name="user-content-smalln_matr-et-bign_matr" href="#smalln_matr-et-bign_matr" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>SMALLN_MATR et BIGN_MATR</h5>
+<p>Le choix des valeurs pour SMALLN_MATR et BIGN_MATR a été fait avec les mêmes motivations. Nous avons obtenu SMALLN_MATR = 200 et BIGN_MATR = 1250.</p>
+<div class="pagebreak"></div>
+
+<h4 id="time"><a name="user-content-time" href="#time" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Time</h4>
+<p>Pour calculer les temps d'executions user de chaque fonctions, nous avons définis dans perfs/src/myTime.c des fonctions qui nous permettent d'utiliser les méthodes utilisant les structures timeval.</p>
+<p>Ceci nous permets de calculer le temps user plus précisemment qu'avec la commande time car nous pouvons ignorer tous le temps nécéssaire à l'initialisation des données.</p>
+<h4 id="read-write"><a name="user-content-read-write" href="#read-write" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>read &amp; write</h4>
+<p>Les fonctions de lectures et d'écriture de vecteurs et de matrices utilisent respectivement les flux stdin et stdout. Il a été envisagé d'utiliser des fichiers à la place. Mais finalement notre choix s'est porté sur cette solution pour qu'il n'y ai pas de gestion de paramètres.</p>
+<p>Cette solution n'a pas de désavantage par rapport à l'autre envisagé puisqu'il est possible de remplacer temporairement stdin ou stdout par un fichier.</p>
+<div class="pagebreak"></div>
+
+<h2 id="tests-effectues"><a name="user-content-tests-effectues" href="#tests-effectues" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tests effectués</h2>
+<p>Pour tester nos bibliothèques, deux types de programmes de types ont été crées. Les premiers nous ont permis de déterminer que les fonctions et procédures que nous avons faites fonctionnent correctement. Les secondes nous ont permis tester les performances des fonctions.</p>
+<h3 id="tests-de-fonctionalites"><a name="user-content-tests-de-fonctionalites" href="#tests-de-fonctionalites" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tests de fonctionalités</h3>
+<p>Pour tester les fonctionalités de la bibliothèque, nous avons créé les programmes de tests contenus dans le dossier ./tests/src. Ces programmes sont tous appelés par le fichier bash tests.sh.</p>
+<p>Pour compiler les programmes et effectuer les tests de fonctionalités, il faut lancer les commandes suivantes :<br />
+<div class="codehilite"><pre><span class="nv">$ </span>./tests.sh
+</pre></div>
+<br />
+Le résultat des tests sont stockés dans le fichier ./tests/resultat.txt</p>
+<p>Il est possible de générer les programmes de tests avec la target tests dans le makefile.<br />
+<div class="codehilite"><pre><span class="nv">$ </span>make tests
+</pre></div>
+</p>
+<p>Récemment, nous avons pu constater que la compilation des programmes de tests en -O3 engendrait une erreur interne à gcc faisant crasher le compilateur. Ce bug n'a pas encore été rapporté à l'écriture de ce rapport.</p>
+<h3 id="tests-de-performances"><a name="user-content-tests-de-performances" href="#tests-de-performances" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tests de performances</h3>
+<p>Pour évaluer les performances de nos fonctions, nous avons créé le fichier perf.sh. Avec ce fichier bash, on effectue 1 000 fois chaque opérations. Avant de lancer la commande, il faut construire les fichiers utilisés en utilisant la target perfs du makefile.</p>
+<p><div class="codehilite"><pre><span class="nv">$ </span>./perf.sh
+</pre></div>
+<br />
+Le résultat des tests est stocké dans le fichier ./perfs/resultats.csv</p>
+<p>Il est possible de générer les programmes de tests performances avec la target test dans le makefile.<br />
+<div class="codehilite"><pre><span class="nv">$ </span>make perfs
+</pre></div>
+</p>
+<p>En modifiant le contenu de la variable CFLAGS dans le makefile, nous avons compilé les programmes de tests sans paramètres d'optimisations puis avec -O1, -O2 et -O3.</p>
+<p>Exceptés pour quelques programmes de tests de performances, les programmes de tests effectuent tous 10 000 000 000 d'opérations. Pour chaque programme, pour calculer le nombre de Flops, il a donc fallu diviser le nombre d'opérations effectuées sur des flottants par le temps d'éxécution des programmes.</p>
+<p>Etant donnée que les tests de performances sont effectués automatiquement et très facilement, toutes les fonctions de la librairies ont été testés.</p>
+<p>Les résultats d'éxécution dans des tableaux et accompagné de graphiques se trouvent dans le fichier /perfs/result.ods.</p>
+<h3 id="interpretation-des-resultats"><a name="user-content-interpretation-des-resultats" href="#interpretation-des-resultats" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Interprétation des résultats</h3>
+<h4 id="generales"><a name="user-content-generales" href="#generales" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Générales :</h4>
+<p>Le temps d'éxecution d'un programme sans optimisations gcc est toujours bien supérieur au temps d'éxécution avec. Cela se voit particulièrement avec l'opération de multiplication d'un vecteur par un scalaire avec des doubles (mScalaire_sdVect et mScalaire_bdVect). On remarque cependant que la différence des résulats avec les optimisations -O2 et -O3 est très faible.</p>
+<p>Les verions openmp de nos fonctions ne semblent pas augmenter les performances comme nous l'attendions. En effet, on observe pour pratiquement toutes les fonctions des baisses de performances nettes. Nous pouvons d'ailleurs faire la même constatations avec la version vectorisés de certaines fonctions.</p>
+<h4 id="vecteur"><a name="user-content-vecteur" href="#vecteur" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Vecteur :</h4>
+<ul>
+<li>
+<p>produit sclaire : Les verions vectorisés de cette fonction sont très lent en comparaison de la version non vectorisé. L'optimisation openmp n'est pas non plus correcte.</p>
+</li>
+<li>
+<p>addition : Que ce soit avec des floats ou des doubles, la version vectorisé de cette fonction améliore les résultats. Cependant, les optimisations openmp, même alliés à la vectorisation, sont très lentes en comparaison</p>
+</li>
+</ul>
+<p>Sans optimisation, les temps d'éxécutions avec des petits ou grands vecteurs ne sont pas très différents. En revanche, la différence est très nette avec une optimisation. On peut donc penser que sans optimisation, le compilateur n'utilise pas le cache pour stocker les vecteurs qui pourrait y tenir.</p>
+<p>On voit que sans optimisations, quelque soit le type de vecteur utilisés, on est entre 300 et 360 Mega flops pour toutes les opérations. En revanche, la multiplication par un scalaire d'un vecteur en utilisant des doubles est beaucoup plus lente. Nous n'avons pas trouvé d'explications à ceci. De plus, avec un paramètre d'optimisation, cette différence disparait.</p>
+<p>Pour les petits vecteurs, plus l'optimisation est haute, plus le temps d'éxecution est faible et donc le nombre de flops augmente.</p>
+<p>Pour les grands doubles, l'optimisation O3 est toujours moins performante que l'optimisation O2.</p>
+<p>Tous les résultats avec openmp que nous avons pu trouvé sont très inférieurs à ceux que nous avons pu observé sans. Ils restent cependant cohérent entre eux. Nous n'avons pas testé sur une autre ordinateur, nous ne pouvons donc pas affirmer qu'il s'agit d'une problème d'implémentation ou de la version d'openmp que nous utilisons.</p>
+<p>Les versions vectorisés des fonctions sont un peu plus rapide que les version non vectorisées. Cependant, les différences ne sont pas flagrantes.</p>
+<h4 id="matrice"><a name="user-content-matrice" href="#matrice" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Matrice :</h4>
+<ul>
+<li>
+<p>Addition : L'optimisation gcc permet bien d'augmenter le nombre de flops pour cette opération. La version vectorisé de cette fonction est la encore un peu plus rapide que la version non vectorisé.</p>
+</li>
+<li>
+<p>Multiplication : Sans optimisation, la multiplication de matrice est très lente. Avec la première optimisation, le nombre de flops a subit une nette amélioration. Les optimisations suivantes n'ont en revanche pas beaucoup affecté ce nouveau résultat.</p>
+</li>
+<li>
+<p>Factorisation LU: Nous n'avons pas eu le temps de faire la fonction factorisation_lu avec openmp. De plus, les résultats que nous obtenons sans openMp semblent très loin de la réalité. Nous obtenons des résulats avec plus de 20Giga flops. De plus, la fonction termine toujours presque instantanément alors que, comme pour la multiplication, c'est une opération qui a une complité n³. Notre implémentation est donc surement incorrecte.</p>
+</li>
+</ul></article></body></html>

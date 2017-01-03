@@ -1,0 +1,2 @@
+#define SMALLN_MATR 	200
+#define BIGN_MATR		1250

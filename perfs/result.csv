@@ -1,0 +1,28 @@
+
+
+Matrices :   sans openMP;
+matrsd_multVect,1250,8000000,84.203117,118760449;
+matrsf_multVect,1250,8000000,50.342328,198639999;
+matrbd_multVect,5,1953125000,134.895574,72393961;
+,,,,;
+
+
+Matrices : -O1 sans openMP;
+matrsd_multVect,1250,8000000,48.945459,204309045;
+matrsf_multVect,1250,8000000,33.485824,298633833;
+matrbd_multVect,5,1953125000,50.598304,193003010;
+,,,,;
+
+
+Matrices : -O2 sans openMP;
+matrsd_multVect,1250,8000000,49.189524,203295319;
+matrsf_multVect,1250,8000000,33.448891,298963574;
+matrbd_multVect,5,1953125000,50.542920,193214499;
+,,,,;
+
+
+Matrices : -O3 sans openMP;
+matrsd_multVect,1250,8000000,49.76705,200936161;
+matrsf_multVect,1250,8000000,33.399703,299403859;
+matrbd_multVect,5,1953125000,50.406266,193738314;
+,,,,;
